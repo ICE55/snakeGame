@@ -213,7 +213,7 @@ function startGame() {
     if (gameRunning) return;
     
     // 播放开始音效
-    AudioManager.play('start');
+    AudioManager.playBackground();
     
     // 初始化游戏状态
     snake = [
