@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>小玉米的贪吃蛇</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="game-container">
+        <h1>小玉米的贪吃蛇</h1>
+        <div class="score-container">
+            <span>得分: </span>
+            <span id="score">0</span>
+        </div>
+        <canvas id="game" width="320" height="320"></canvas>
+        <div class="controls">
+            <button id="startBtn">开始游戏</button>
+            <div class="direction-buttons">
+                <button id="upBtn">上</button>
+                <div class="horizontal-buttons">
+                    <button id="leftBtn">左</button>
+                    <button id="rightBtn">右</button>
+                </div>
+                <button id="downBtn">下</button>
+            </div>
+        </div>
+    </div>
+    <script src="audioManager.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
